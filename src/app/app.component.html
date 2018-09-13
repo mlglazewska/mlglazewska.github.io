@@ -1,0 +1,84 @@
+<div id="page">
+  <header>
+    <a class="logo" title="Projekt Końcowy" href="#"><span>Projekt Końcowy</span></a> <!-- dorzucic logo tutaj-->
+    <div class="black-hole">
+      <h1>Projekt Końcowy</h1>
+      <p>z zajęć <b>programowanie w internecie</b></p>
+    </div>
+  </header>
+  <!--<section class="troposphere">
+      <aside>
+          <div class="content">
+              <h4>Pomoc</h4>
+              <p>Gdy nie masz już pomysłów, co wstawić na stronę...</p>
+          </div>
+      </aside>
+      <aside>
+          <div class="content">
+              <h4>Grafiki</h4>
+              <p>Czasem trzeba po prostu popatrzeć na zdjęcia małych kotków...</p>
+          </div>
+      </aside>
+  </section>-->
+  <section class="stratosphere">
+    <article ng-model="main-article" class="index-v">
+      <p>{{mainArticleFirst}}<br><br>{{mainArticleSecond}}<br><br>{{mainArticleThird}}<br><br>{{mainArticleFourth}}</p>
+    </article>
+  </section>
+  <section class="galaxy">
+    <aside>
+      <div class="content first" >
+        <h3><a href="#" ng-model="capricorn-title">{{capricornTitle}}</a></h3><p>{{capricornText}}</p>
+      </div>
+    </aside>
+    <aside>
+      <div class="content second">
+        <h3><a href="#" >{{shootTitle}}</a></h3><p>{{shootText}}</p>
+        <!--tutaj ma znajdowac sie tekst pod ikonkami aside-->
+      </div>
+    </aside>
+    <aside>
+      <div class="content third">
+        <h3><a href="#">{{constellationTitle}}</a></h3><p>{{constellationText}}</p>
+        <!--tutaj ma znajdowac sie tekst pod ikonkami aside--><!--asidow moze byc wiecej. lub mniej-->
+      </div>
+    </aside>
+    <aside>
+      <div class="content fourth">
+        <h3><a href="#">{{leoTitle}}</a></h3><p>{{leoText}}</p>
+        <!--tutaj ma znajdowac sie tekst pod ikonkami aside--><!--asidow moze byc wiecej. lub mniej-->
+      </div>
+    </aside>
+  </section>
+  <nav>
+    <ul>
+      <li>
+        <a title="O mnie" href="#" (click)="showAbout()">{{menuAbout}}</a>
+      </li>
+      <li>
+        <a title="Cele" href="#" (click)="showGoals()">{{menuGoals}}</a>
+      </li>
+      <li>
+        <a title="Language" href="#" >{{menuLang}}</a>
+        <ul>
+          <li>
+            <a title="Polish" href="#" (click)="switchPol()">{{menuPol}}</a>
+          </li>
+          <li>
+            <a title="English" href="#" (click)="switchEng()">{{menuEng}}</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a title="Menu Zadań" href="https:\\madbutterflies.github.io">{{menuMenu}}</a>
+      </li>
+    </ul>
+  </nav>
+  <footer>
+    &copy; PWI Homework
+    <div class="content">
+      <a title="Privacy Policy" href="#">Privacy Policy</a>
+      <a title="Terms of Use" href="#">Terms of Use</a>
+    </div>
+  </footer>
+</div>
